@@ -16,8 +16,9 @@ namespace Game_Of_Life
         public static int univerSize = 0;
         public static int timeClicked = 0;
         string information1 = "Choose the size of your Universe: 1 corresponds to a 1x1 grid relative to the screen size, and 10 corresponds to a 4x4 grid relative to the screen size.";
-        string information2 = @"            The cells of the grid can be filled using the mouse. 
+        string information2 = @"                               The cells of the grid can be filled using the mouse. 
                               ""The (+) key fills the cells randomly, while the (-) key removes all living cells to clear the grid. ""
+                              ""Ctrl + Mouse Wheel for zooming and De-zooming ""
                                 The event starts and stops by pressing the spacebar. Have fun :)";
         public SizeChoice()
         {

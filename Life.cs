@@ -81,6 +81,7 @@ namespace Game_Of_Life
                 DG.Rows[rowIndex].Cells[colIndex].Style.BackColor = nextCell.IsAlive ? Color.Red : Color.Gray;
             }
             cellDico = null;
+            Univers.generation++;          
             return newGeneration;
         }
 
@@ -99,7 +100,7 @@ namespace Game_Of_Life
                 DG.Rows[rowIndex].Cells[colIndex].Style.BackColor = nextCell.IsAlive ? Color.Red : Color.Gray;
             }
             DG.ResumeLayout();
-
+            Univers.generation = 0;
             return newGeneration;
         }
 
@@ -118,7 +119,7 @@ namespace Game_Of_Life
                 DG.Rows[rowIndex].Cells[colIndex].Style.BackColor = nextCell.IsAlive ? Color.Red : Color.Gray;
             }
             DG.ResumeLayout();
-
+            Univers.generation = 0;
             return newGeneration;
         }
     }
